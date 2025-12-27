@@ -1,83 +1,85 @@
-# Mapa de Matéria Escura com o Atacama Cosmology Telescope (ACT)
+# ACT Dark Matter Map
 
-Este repositório documenta a geração do **maior e mais detalhado mapa de matéria escura já feito** a partir da radiação cósmica de fundo (CMB), utilizando dados do **Atacama Cosmology Telescope (ACT)**. O projeto combina instrumentação avançada, algoritmos sofisticados e software aberto para revelar a distribuição invisível de matéria no Universo.
-
----
-
-## Visão Geral
-
-A matéria escura compõe cerca de 85% da matéria do cosmos, mas não emite luz. Para mapeá-la, os cientistas analisam como sua gravidade distorce a luz da CMB — a radiação remanescente do Big Bang. O ACT observou essa radiação com alta resolução, permitindo reconstruir um mapa detalhado da matéria escura ao longo de bilhões de anos-luz.
+This repository documents the creation of the **largest and most detailed dark matter map ever produced** from the Cosmic Microwave Background (CMB), utilizing data from the **Atacama Cosmology Telescope (ACT)**. The project combines advanced instrumentation, sophisticated algorithms, and open-source software to unveil the invisible mass distribution in the Universe.
 
 ---
 
-## Tecnologias e Softwares Utilizados
+## Overview
 
-- **Reconstrução de Lente Gravitacional**: Algoritmo baseado em *estimadores quadráticos* (Hu & Okamoto 2002), implementado com os pacotes abertos:
-  - **Falafel**: cálculos em céu curvo
-  - **Tempura**: correções de normalização e ruído
-- **Linguagem Python** e bibliotecas:
-  - **Astropy**: cálculos astronômicos
-  - **Healpy/HEALPix**: manipulação de mapas esféricos
-  - **Matplotlib**, **PIL**: visualização
-- **Cálculo Teórico**:
-  - **CAMB**: geração de espectros teóricos da CMB e lentes
-- **Inferência Estatística**:
-  - **Cobaya**, **GetDist**, **CosmoSIS**: ajuste Bayesiano e análise MCMC para parâmetros cosmológicos
-- **Supercomputação**:
-  - Clusters e supercomputadores (Princeton, SciNet, NERSC) para processar grandes volumes de dados e simulações
+Dark matter constitutes approximately 85% of the matter in the cosmos, yet it emits no light. To map it, scientists analyze how its gravity distorts the light of the CMB—the remnant radiation from the Big Bang. The ACT observed this radiation with high resolution, enabling the reconstruction of a detailed map of dark matter over billions of light-years.
 
 ---
 
-## Metodologia Resumida
+## Technologies and Software Used
 
-1. **Coleta de Dados**: Observações do ACT entre 2017-2021 cobrindo ~9400 deg² do céu.
-2. **Limpeza dos Dados**: Remoção de sinais contaminantes (fontes pontuais, poeira, efeitos Sunyaev-Zel’dovich) usando múltiplas frequências e técnicas de *bias-hardening*.
-3. **Reconstrução da Lente**: Aplicação do estimador quadrático para extrair o sinal de lente gravitacional e gerar o mapa de convergência (matéria escura).
-4. **Calibração e Correções**: Uso de simulações para remover vieses estatísticos e validar o mapa.
-5. **Validação Cruzada**: Comparação com dados do satélite Planck e catálogos de galáxias, confirmando a consistência do resultado com o modelo cosmológico padrão.
-
----
-
-## Dados e Instrumentos
-
-- **Fonte Primária**: Radiação cósmica de fundo (CMB) observada pelo ACT, um telescópio de 6 metros no Chile.
-- **Instrumentação**: Detectores supercondutores operando a temperaturas criogênicas para alta sensibilidade.
-- **Dados Auxiliares**: Mapas do satélite Planck para limpeza e validação.
-- **Produtos Disponíveis**:
-  - Mapas de convergência gravitacional (matéria escura)
-  - Mapas separados por temperatura/polarização
-  - Simulações para testes e validação
-  - Documentação detalhada
+- **Gravitational Lensing Reconstruction**: Algorithm based on *quadratic estimators* (Hu & Okamoto 2002), implemented with open-source packages:
+  - **Falafel**: Curved sky calculations
+  - **Tempura**: Normalization and noise corrections
+- **Python** and libraries:
+  - **Astropy**: Astronomical calculations
+  - **Healpy/HEALPix**: Spherical map manipulation
+  - **Matplotlib**, **PIL**: Visualization
+- **Theoretical Calculation**:
+  - **CAMB**: Generation of theoretical CMB and lens spectra
+- **Statistical Inference**:
+  - **Cobaya**, **GetDist**, **CosmoSIS**: Bayesian fitting and MCMC analysis for cosmological parameters
+- **High-Performance Computing**:
+  - Clusters and supercomputers (Princeton, SciNet, NERSC) to process large volumes of data and simulations
 
 ---
 
-## Como Acessar Dados e Código
+## Methodology Summary
 
-- **Dados Públicos**: Disponíveis no repositório [LAMBDA da NASA](https://lambda.gsfc.nasa.gov/product/act/actadv_dr6_lensing_maps_info.html)
-- **Simulações**: Centenas de realizações para análise estatística
-- **Tutoriais**: Notebooks Python (Google Colab) para carregar e explorar os dados
-- **Softwares**: Ferramentas como Falafel e Tempura são de código aberto e podem ser reutilizadas em outros projetos
-
----
-
-## Aplicações e Possibilidades Futuras
-
-- **Reprodução e Aprendizado**: Qualquer pesquisador pode replicar etapas da análise com os dados e códigos públicos.
-- **Testes de Novas Teorias**: Simulações permitem explorar hipóteses alternativas sobre matéria e energia escuras.
-- **Cross-correlations**: Combinar o mapa do ACT com catálogos de galáxias, lentes fracas e outros dados para estudos multifacetados do cosmos.
-- **Extensão para Novos Experimentos**: A metodologia será aplicada em projetos como o **Simons Observatory** e **CMB-S4**, ampliando a precisão dos mapas futuros.
+1. **Data Collection**: ACT observations from 2017-2021 covering ~9400 deg² of the sky.
+2. **Data Cleaning**: Removal of contaminant signals (point sources, dust, Sunyaev-Zel'dovich effects) using multi-frequency techniques and bias-hardening.
+3. **Lensing Reconstruction**: Application of the quadratic estimator to extract the gravitational lensing signal and generate the convergence map (dark matter).
+4. **Calibration and Corrections**: Use of simulations to remove statistical biases and validate the map.
+5. **Cross-Validation**: Comparison with Planck satellite data and galaxy catalogs, confirming the result's consistency with the standard cosmological model.
 
 ---
 
-## Referências Principais
+## Data and Instruments
 
-- [The Atacama Cosmology Telescope: Mitigating the impact of extragalactic foregrounds for the DR6 CMB lensing analysis](https://ar5iv.org/abs/2304.05196)
-- [The Atacama Cosmology Telescope: DR6 Gravitational Lensing Map and Cosmological Parameters](https://ar5iv.org/abs/2304.05203)
-- [Notícia NIST sobre o mapa de matéria escura](https://www.nist.gov/news-events/news/2023/04/atacama-cosmology-telescope-collaboration-which-includes-scientists-nist)
-- [Reportagem Galileu](https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/05/astronomos-criam-mapa-inedito-da-materia-escura-no-universo.ghtml)
+- **Primary Source**: Cosmic Microwave Background (CMB) observed by the ACT, a 6-meter telescope in Chile.
+- **Instrumentation**: Superconducting detectors operating at cryogenic temperatures for high sensitivity.
+- **Auxiliary Data**: Maps from the Planck satellite for cleaning and validation.
+- **Available Products**:
+  - Gravitational convergence maps (dark matter)
+  - Separated temperature/polarization maps
+  - Simulations for testing and validation
+  - Detailed documentation
 
 ---
 
-## Sobre
+## How to Access Data and Code
 
-Este projeto demonstra como transformar **sinais invisíveis** da radiação primordial em um **mapa concreto da matéria escura**, combinando ciência de ponta, software aberto e colaboração internacional. Ele serve como base para estudos futuros e para quem deseja aprender ou contribuir com a cosmologia computacional.
+- **Public Data**: Available at the NASA [LAMBDA repository](https://lambda.gsfc.nasa.gov/product/act/actadv_dr6_lensing_maps_info.html).
+- **Source Code**: Scripts and pipelines used for processing are available within this repository.
+
+---
+
+## Getting Started
+
+*Prerequisites: Python 3.8+, CAMB, Falafel, Tempura, Healpy.*
+
+1. **Clone the repository:**
+   bash
+   git clone https://github.com/yourusername/act-dark-matter-map.git
+   cd act-dark-matter-map
+   
+
+2. **Install dependencies:**
+   bash
+   pip install -r requirements.txt
+   
+
+3. **Run the visualization script:**
+   bash
+   python scripts/visualize_map.py
+   
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
