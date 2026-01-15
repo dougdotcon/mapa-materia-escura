@@ -1,6 +1,0 @@
-emcee
-corner
-scipy
-matplotlib
-pandas
-astropy
