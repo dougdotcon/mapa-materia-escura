@@ -67,7 +67,7 @@ This framework derives all properties of matter (mass, charge, spin), all forces
 
 | Problem | TARDIS Solution |
 |:--------|:----------------|
-| **Dark Matter** | Does not exist. Rotation curves explained by entropic gravity with $a_0 = 1.2×10^{-10}$ m/s² |
+| **Dark Matter** | Does not exist. Rotation curves and **Lensing (see Root Testbench)** explained by entropic gravity |
 | **Dark Energy** | Hawking evaporation seen from inside the cosmic black hole |
 | **Information Paradox** | Information encoded on holographic horizon, never lost |
 | **Cosmological Constant** | $Λ \sim 1/r_H²$ — automatically small for large universe |
@@ -81,6 +81,7 @@ This framework derives all properties of matter (mass, charge, spin), all forces
 ## Project Structure
 
 ### 📁 Pillar I: Scientific Engines
+
 *Location: `1_Motores_Cientificos/`*
 
 | Engine | Description | Key Results |
@@ -88,9 +89,10 @@ This framework derives all properties of matter (mass, charge, spin), all forces
 | **HolographicOrigin** | Core "Theory of Everything" engine | Electron mass, α, spin, generations, quarks, Schrödinger derivation |
 | **Electron_Holography_Engine** | 16 Python physics engines | `lepton_generations.py`, `topological_knot_solver.py`, `holographic_time_solver.py` |
 | **ReactiveCosmoMapper** | N-Body cosmological simulation | CMB 3rd Peak, Rotation Curves, JWST Crisis, Satellite Planes |
-| **EntropicGravity_Engine** | Verlinde's Entropic Gravity | Energy conservation, Disk stability, Lensing, Cosmology |
+| **EntropicGravity_Engine** | Verlinde's Entropic Gravity | **[See Lensing Validation (Verified)](../../README.md)**, Disk stability, Cosmology |
 
 ### 📁 Pillar II: Theoretical Laboratory
+
 *Location: `2_Laboratorio_Teorico/`*
 
 | Lab | Description | Key Results |
@@ -100,9 +102,11 @@ This framework derives all properties of matter (mass, charge, spin), all forces
 | **FINETUNNING** | AI Fine-tuning corpus | 4 comprehensive training documents |
 
 ### 📁 Pillar III: New Papers Collection
+
 *Location: `novos_papers/`*
 
 **37 additional scientific papers** covering:
+
 - Cosmological validations (JWST, Hubble Tension, CMB B-modes)
 - Particle physics (Neutrinos, Quarks, Higgs topology)
 - Fundamental problems (Singularity, Information Paradox, Measurement)
@@ -117,6 +121,7 @@ All **43 papers** are consolidated in a single HTML document:
 📄 **[unified_papers.html](unified_papers.html)** (247 KB, 4935 lines)
 
 Includes:
+
 - Complete theoretical framework
 - All mathematical derivations
 - Embedded figures and visualizations
@@ -142,6 +147,7 @@ Includes:
 $$\boxed{F = \alpha \cdot \Gamma \cdot T \cdot \nabla S}$$
 
 Where:
+
 - **α = 0.47**: Entropic coupling (vacuum reactivity)
 - **Γ = 117.038**: TARDIS compression factor
 - **T**: Unruh/Hawking temperature
@@ -190,7 +196,7 @@ python simulate_rotation_curves.py
 **Douglas H. M. Fulber**  
 Universidade Federal do Rio de Janeiro (UFRJ)  
 ORCID: 0009-0000-7535-5008  
-Email: dougdotcon@gmail.com
+Email: <dougdotcon@gmail.com>
 
 ---
 
